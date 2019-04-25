@@ -1,17 +1,14 @@
 package com.mkyong.hashing;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-import junit.framework.TestCase;
+public class AppTest {
 
-public class AppTest extends TestCase {
-
-        public AppTest(String name) {
-            super( name );
-        }
-
+        @Test
         public void testSeriousness() throws Exception {
             App tester = new App(); // MyClass is tested
             // assert statements
-            assertEquals(10, tester.add(10, 0));
+            Assertions.assertEquals(10, tester.add(10, 0));
         }
 }
